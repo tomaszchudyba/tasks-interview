@@ -7,7 +7,7 @@ class BlacklistDeleteAllPhoneNumbersCest
     }
 
     // tests
-    public function tryToTest(ApiTester $I)
+    public function tryDeleteAllPhoneNumbers(ApiTester $I)
     {
         $I->wantToTest('Delete all phone numbers from blacklist');
 	$I->amBearerAuthenticated('Ym8bIC6KValyegDuBFnrs9no7vYLOTYHp3BV8lqi');

@@ -7,7 +7,7 @@ class BlacklistGetPhoneNumberCest
     }
 
     // tests
-    public function tryToTest(ApiTester $I)
+    public function tryToGetPhoneNumber(ApiTester $I)
     {
       $I->amBearerAuthenticated('Ym8bIC6KValyegDuBFnrs9no7vYLOTYHp3BV8lqi');
       $I->sendGet('/blacklist/phone_numbers');
