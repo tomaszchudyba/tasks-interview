@@ -1,0 +1,83 @@
+Testowany moduł:Wiadomości SMS - Bramka SMS
+ID 1.1
+Testowana podsekcja:Szybka bramka
+Tytuł:Wysyłanie wiadomości przy braku wymaganej ilości PKT.
+Środowisko testu:Przeglądarki Opera,Chrome,Mozzila
+System operacyjny Windows 7,8,8.1,10
+URL miejsca testowego:https://ssl.smsapi.pl/sms/gate#tab_quick
+Kroki do wykonania:
+1.W Pole nadawcy wybierz TEST
+2.W polu odbiorcy wpisz numer 507395456
+3.W polu treść wpisz TEST
+4.Kliknij na przycisk Wyślij
+Oczekiwany rezultat:Użytkownik nie jest w stanie prześłać widomości,
+z powodu nie wystarczającej ilości PKT.
+Powinien pokazać się komunikat o treści:
+"Niewystarczająca liczba punktów na koncie do dokonania wysyłki"
+Warunek końcowy:Użytkownik nie wyśle wiadomości,z powodu nie wystarczającej ilości PKT.
+ID 1.2
+Testowana podsekcja:Szybka bramka
+Tytuł:Wysyłanie wiadomości,gdy numer jest nie prawidłowy,na czarnej liście,
+liście wypisanych,lub podano numery bez prefiksu kraju.
+Środowisko testu:Przeglądarki Opera,Chrome,Mozzila
+System operacyjny Windows 7,8,8.1,10
+URL miejsca testowego:https://ssl.smsapi.pl/sms/gate#tab_quick
+Kroki do wykonania:
+1.W pole nadawcy wybierz TEST
+2.W polu odbiorcy wpisz numer 107395456
+3.W polu treść wpisz TEST
+4.Kliknij na przycisk Wyślij
+Oczekiwany rezultat:Użytkownik nie jest w stanie prześłać widomości,
+z powodu braku dozwolonego/prawidłowego odbiorcy.
+Powinien pokazać się komunikat o treści:
+"Brak prawidłowych numerów telefonu. Numery mogą znajdować się na czarnej liście, liście wypisanych lub podano numery bez prefiksu kraju."
+Warunek końcowy:Użytkownik nie wyśle wiadomości,z powodu braku dozwolonego/prawidłowego odbiorcy.
+ID 1.3
+Testowana podsekcja:Numery z pliku
+Tytuł:Wysyłanie wiadomości,bez wybrania pliku
+Środowisko testu:Przeglądarki Opera,Chrome,Mozzila
+System operacyjny Windows 7,8,8.1,10
+URL miejsca testowego:https://ssl.smsapi.pl/sms/gate#tab_csv_no
+Kroki do wykonania:
+1.W Pole nadawcy wybierz TEST
+2.W polu Nazwa wysyłki wpisz TEST
+3.W polu treść wpisz TEST
+4.Kliknij na przycisk Dalej
+Oczekiwany rezultat:Użytkownik nie jest w stanie prześłać widomości,
+z powodu braku wgrania listy.
+Powinien pokazać się komunikat o treści:
+"Plik z listą odbiorców nie może być pusty"
+Warunek końcowy:Użytkownik nie wyśle wiadomości z powodu pustej listy.
+ID 1.4
+Testowana podsekcja:Numery i treści z pliku.
+Tytuł:Wysyłanie wiadomości,bez wybrania pliku
+Środowisko testu:Przeglądarki Opera,Chrome,Mozzila
+System operacyjny Windows 7,8,8.1,10
+URL miejsca testowego:https://ssl.smsapi.pl/sms/gate#tab_csv_content
+Kroki do wykonania:
+1.W Pole nadawcy wybierz TEST
+2.W polu Nazwa wysyłki wpisz TEST
+3.Kliknij na przycisk Dalej
+Oczekiwany rezultat:Użytkownik nie jest w stanie prześłać widomości,
+z powodu braku wgrania listy.
+Powinien pokazać się komunikat o treści:
+"Brak pliku z danymi"
+Warunek końcowy:Użytkownik nie wyśle wiadomości z powodu pustej listy.
+ID 1.5
+Testowana podsekcja:Numery z bazy.
+Tytuł:Wysyłanie wiadomości,przy pustej liście.
+Środowisko testu:Przeglądarki Opera,Chrome,Mozzila
+System operacyjny Windows 7,8,8.1,10
+URL miejsca testowego:https://ssl.smsapi.pl/sms/gate#tab_phone_book
+Kroki do wykonania:
+1.W Pole nadawcy wybierz TEST
+2.W polu Nazwa wysyłki wpisz Testowa
+3.W polu filtry kliknij na Wybierz
+4.W polu wybierz kliknij na Wszystkie i kliknij Wybierz
+5.W polu Treść wpisz Brak
+6.Kliknij na przycisk Dalej
+Oczekiwany rezultat:Użytkownik nie jest w stanie prześłać widomości,
+z powodu braku wgrania listy.
+Powinna pokazać się lista podsumowująca a po niej komunikat o treści:
+"Lista odbiorców nie może być pusta"
+Warunek końcowy:Użytkownik nie wyśle wiadomości z powodu nie wgrania listy.
