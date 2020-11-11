@@ -1,0 +1,929 @@
+{
+  "id": "8085ef2d-d767-4dcd-adb3-2d34e9576e34",
+  "version": "2.0",
+  "name": "SMSAPI",
+  "url": "https://ssl.smsapi.pl/periodic/sms#tab_quick_gate",
+  "tests": [{
+    "id": "145ea1c7-62fd-4962-9b20-20a51384359e",
+    "name": "BRAMKA SMS SZYBKA BRAMKA WYSYŁANIE PRZY BRAKU PKT",
+    "commands": [{
+      "id": "248a1f70-4c83-45d1-919b-9ad522ab622b",
+      "comment": "",
+      "command": "open",
+      "target": "https://ssl.smsapi.pl/sms/gate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7879cc5b-93de-4925-8d46-572fdfa4512c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ce782ee-d911-4ab8-ace4-b85fe75688f4",
+      "comment": "",
+      "command": "click",
+      "target": "name=to",
+      "targets": [
+        ["id=to_760898", "id"],
+        ["name=to", "name"],
+        ["css=#to_760898", "css:finder"],
+        ["xpath=//textarea[@id='to_760898']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d7f17f6-03fe-4a1c-a3b4-ce940e11c8ae",
+      "comment": "",
+      "command": "type",
+      "target": "name=to",
+      "targets": [
+        ["id=to_760898", "id"],
+        ["name=to", "name"],
+        ["css=#to_760898", "css:finder"],
+        ["xpath=//textarea[@id='to_760898']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "507395456"
+    }, {
+      "id": "0f809107-47d3-45ec-b3cb-7eea67bbf010",
+      "comment": "",
+      "command": "click",
+      "target": "name=from",
+      "targets": [
+        ["id=from_616221", "id"],
+        ["name=from", "name"],
+        ["css=#from_616221", "css:finder"],
+        ["xpath=//select[@id='from_616221']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "486f4903-b240-4aae-a89c-72999ab7fc72",
+      "comment": "",
+      "command": "select",
+      "target": "name=from",
+      "targets": [],
+      "value": "label=Test"
+    }, {
+      "id": "8ce14c16-f05e-4f96-bd48-2c0624a0a6f2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//option[2]",
+      "targets": [
+        ["css=#from_616221 option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='Test']", "xpath:attributes"],
+        ["xpath=//select[@id='from_616221']/optgroup[2]/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f948a23-b79e-46d8-9523-b4a528e5a216",
+      "comment": "",
+      "command": "click",
+      "target": "name=message",
+      "targets": [
+        ["id=textarea_132694", "id"],
+        ["name=message", "name"],
+        ["css=#textarea_132694", "css:finder"],
+        ["xpath=//textarea[@id='textarea_132694']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[3]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af39ea4d-5790-4800-9c97-1960e78f07d9",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[3]/div/div/div/textarea",
+      "targets": [
+        ["id=textarea_939380", "id"],
+        ["name=message", "name"],
+        ["css=#textarea_939380", "css:finder"],
+        ["xpath=//textarea[@id='textarea_939380']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[3]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "7023c8fc-8fc7-4618-81cc-1b43898db241",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.toggle-send-schedule", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce5d1f2e-4bb9-4436-89bd-c3b2f7b25805",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bdf105c-b2f1-45a2-8a5d-7e6a46d8e3cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-xs",
+      "targets": [
+        ["css=.fa-xs", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58f357f-115f-4be4-8976-038ac70f8d35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.check:nth-child(2) > input",
+      "targets": [
+        ["css=.check:nth-child(2) > input", "css:finder"],
+        ["xpath=(//input[@name='normalize'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div[2]/div/fieldset/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ba86c4f-bee6-43f0-86fe-d1a6337e9d83",
+      "comment": "",
+      "command": "click",
+      "target": "name=flash",
+      "targets": [
+        ["name=flash", "name"],
+        ["css=.sms_options > .checkbox:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='flash']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div[2]/div/fieldset/div/div[2]/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "137151df-5c8f-4650-901f-8b833ec23190",
+      "comment": "",
+      "command": "click",
+      "target": "name=fast",
+      "targets": [
+        ["name=fast", "name"],
+        ["css=.sms_options > .checkbox:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='fast']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div[2]/div/fieldset/div/div[3]/label/input", "xpath:idRelative"],
+        ["xpath=//div[3]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "506b210d-e215-4aee-9778-74950eedfd11",
+      "comment": "",
+      "command": "click",
+      "target": "name=set_date",
+      "targets": [
+        ["name=set_date", "name"],
+        ["css=#sms_quick_gate .date_select > .checkbox input", "css:finder"],
+        ["xpath=//input[@name='set_date']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div[2]/div/fieldset[2]/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "538ee535-0928-4486-9cef-06dda2b62a3a",
+      "comment": "",
+      "command": "click",
+      "target": "name=message",
+      "targets": [
+        ["id=textarea_762845", "id"],
+        ["name=message", "name"],
+        ["css=#textarea_762845", "css:finder"],
+        ["xpath=//textarea[@id='textarea_762845']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[3]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7f02043-bf31-4272-b712-5e7dd6ef1415",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["id=textarea_762845", "id"],
+        ["name=message", "name"],
+        ["css=#textarea_762845", "css:finder"],
+        ["xpath=//textarea[@id='textarea_762845']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[3]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "Test 2"
+    }, {
+      "id": "d38e8cc9-fd63-47bc-979a-790a5f3e0b53",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62292869-3376-4a66-b73c-751d59cf9dc8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.toggle-send-schedule", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a60d60a9-7a35-4bbf-9223-d4f71bab725a",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a30500fd-b5b9-48fb-b3ec-faf24d9bf4f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-xs > path",
+      "targets": [
+        ["css=.fa-xs > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8e8b131-d661-41fb-90eb-d8f19703ad12",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=div:nth-child(3) .popup-box-container:nth-child(4) .label-insert-parameter:nth-child(1)",
+      "targets": [
+        ["css=div:nth-child(3) .popup-box-container:nth-child(4) .label-insert-parameter:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[3]/div/div/div/div/div/div/div[3]/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Plik')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "679bbf12-0c13-42c9-8525-4736405b822f",
+      "comment": "",
+      "command": "click",
+      "target": "name=to",
+      "targets": [
+        ["id=to_230590", "id"],
+        ["name=to", "name"],
+        ["css=#to_230590", "css:finder"],
+        ["xpath=//textarea[@id='to_230590']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a735b97-bc31-4f4f-80b0-48b9978d360e",
+      "comment": "",
+      "command": "type",
+      "target": "name=to",
+      "targets": [
+        ["id=to_230590", "id"],
+        ["name=to", "name"],
+        ["css=#to_230590", "css:finder"],
+        ["xpath=//textarea[@id='to_230590']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "507395456"
+    }, {
+      "id": "93e0c7f1-fa23-438e-bb79-fb7f12ed25df",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9937dcab-340b-454a-a29c-c1d8c848d459",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.toggle-send-schedule", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_quick_gate']/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "802bd049-764c-4960-83f2-247200a8bda7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac5b6dfe-2d62-444b-8e90-5530ae70f213",
+    "name": "BRAMKA SMS NUMERY Z PLIKU WYSYŁANIE BEZ WYBRANIA PLIKU",
+    "commands": [{
+      "id": "dbfc38ce-73fb-411e-a6f9-479da1107744",
+      "comment": "",
+      "command": "open",
+      "target": "https://ssl.smsapi.pl/sms/gate#tab_csv_no",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ade110b-1302-498c-af32-ec2b6c4315cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "261e0fd0-b554-44ce-a401-7dba0be950b7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div/div/span/select",
+      "targets": [
+        ["id=from_314006", "id"],
+        ["css=#from_314006", "css:finder"],
+        ["xpath=//select[@id='from_314006']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/div/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aacd6b80-65e0-4779-a323-5fea9af95e92",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div/div/span/select",
+      "targets": [],
+      "value": "label=Test"
+    }, {
+      "id": "f5480b84-80f6-4e1a-9326-461227eee5c8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//option[@value='Test'])[2]",
+      "targets": [
+        ["css=#from_314006 option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='Test'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='from_314006']/optgroup[2]/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div/div/span/select/optgroup[2]/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "974af40a-030a-4fa3-8a8f-7f5a30b90925",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["id=name_384925", "id"],
+        ["name=name", "name"],
+        ["css=#name_384925", "css:finder"],
+        ["xpath=//input[@id='name_384925']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "355f2246-72a9-4c22-87f5-69332332ebd0",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["id=name_384925", "id"],
+        ["name=name", "name"],
+        ["css=#name_384925", "css:finder"],
+        ["xpath=//input[@id='name_384925']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "TEST"
+    }, {
+      "id": "ac95a751-5333-4f19-80ed-5d59c3a48017",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[4]/div/div/div/textarea",
+      "targets": [
+        ["id=textarea_707774", "id"],
+        ["css=#textarea_707774", "css:finder"],
+        ["xpath=//textarea[@id='textarea_707774']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc0b368c-49f5-4b49-a7c4-a8b975c16254",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[4]/div/div/div/textarea",
+      "targets": [
+        ["id=textarea_707774", "id"],
+        ["css=#textarea_707774", "css:finder"],
+        ["xpath=//textarea[@id='textarea_707774']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "TEST"
+    }, {
+      "id": "c1bd8527-40f5-4d7d-8766-df963ff57d94",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "194b52f9-b2a4-4c70-9eb2-dfe723d87536",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gateways-form:nth-child(2) .button-primary",
+      "targets": [
+        ["css=.gateways-form:nth-child(2) .button-primary", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_file']/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/div/div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5e44bf8-7b93-4948-96da-8bb3fa8aeede",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6067036-c939-4cf1-a8ab-7fb69f6099b7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "153b6788-bb75-4215-8383-f4754b447b76",
+    "name": "BRAMKA SMS NUMERY I TREŚCI Z PLIKU WYSYŁANIE BEZ WYBRANIA PLIKU",
+    "commands": [{
+      "id": "dcf8ba3f-16b7-44ac-a9f6-edaa135bf328",
+      "comment": "",
+      "command": "open",
+      "target": "https://ssl.smsapi.pl/sms/gate#tab_csv_content",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc50f74b-2111-4c79-af43-e624ee05c1fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8863eade-6461-4d9b-881b-6edc7e2f15df",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div/div/span/select",
+      "targets": [
+        ["id=from_773690", "id"],
+        ["css=#from_773690", "css:finder"],
+        ["xpath=//select[@id='from_773690']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/div/div/div/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53609788-a56d-40d3-b1d3-1710e8056ed1",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div/div/span/select",
+      "targets": [],
+      "value": "label=Test"
+    }, {
+      "id": "15f7ab92-2de6-45c8-a8aa-481b5f862baa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//option[@value='Test'])[3]",
+      "targets": [
+        ["css=#from_773690 option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='Test'])[3]", "xpath:attributes"],
+        ["xpath=//select[@id='from_773690']/optgroup[2]/option[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/div/div/div/span/select/optgroup[2]/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d3a604-650a-481a-9b7e-3f2aa9bb036a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div[2]/div/input",
+      "targets": [
+        ["id=name_877968", "id"],
+        ["css=#name_877968", "css:finder"],
+        ["xpath=//input[@id='name_877968']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3008b1cc-711b-480b-955f-de6da299d806",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div[2]/div/input",
+      "targets": [
+        ["id=name_877968", "id"],
+        ["css=#name_877968", "css:finder"],
+        ["xpath=//input[@id='name_877968']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "b35724f2-32b1-4bb3-ab2f-bcf1fc50ab83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.control-submit:nth-child(1) > .button-send",
+      "targets": [
+        ["css=.control-submit:nth-child(1) > .button-send", "css:finder"],
+        ["xpath=(//input[@name='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_and_content_from_file']/div/div/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e17e3752-a251-479e-a538-7413bc2568b0",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6b08463-5301-436b-a904-5825a70a2614",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cca8850d-6562-4567-b62d-fed6200d70b0",
+    "name": "BRAMKA SMS NUMERY Z BAZY WYSYŁANIE PRZY PUSTEJ LIŚCIE",
+    "commands": [{
+      "id": "d4334155-6b6a-4eb1-82e2-5236bfd60330",
+      "comment": "",
+      "command": "open",
+      "target": "https://ssl.smsapi.pl/sms/gate#tab_phone_book",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c6d0d97-6d17-4eb0-a60c-d648fd0c3656",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f78c47ee-4f99-4419-927a-17b42bbaf2af",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div/div/span/select",
+      "targets": [
+        ["id=from_441637", "id"],
+        ["css=#from_441637", "css:finder"],
+        ["xpath=//select[@id='from_441637']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/div/div/div/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "910f0420-8b33-43fb-83a2-fe1eef87d5aa",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div/div/span/select",
+      "targets": [],
+      "value": "label=Test"
+    }, {
+      "id": "be5df6cf-2d5b-40da-a50c-efb1539abb04",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//option[@value='Test'])[4]",
+      "targets": [
+        ["css=#from_441637 option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='Test'])[4]", "xpath:attributes"],
+        ["xpath=//select[@id='from_441637']/optgroup[2]/option[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/div/div/div/span/select/optgroup[2]/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "226f0135-1f9d-46f7-8414-7617a6edb0ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[2]/div/input",
+      "targets": [
+        ["id=name_469965", "id"],
+        ["css=#name_469965", "css:finder"],
+        ["xpath=//input[@id='name_469965']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa2f4f27-f04d-4da4-a4b4-ec4b10fa998e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[2]/div/input",
+      "targets": [
+        ["id=name_469965", "id"],
+        ["css=#name_469965", "css:finder"],
+        ["xpath=//input[@id='name_469965']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Testowa"
+    }, {
+      "id": "d243d924-fb1b-42d1-91eb-aefb1f208943",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fake_select",
+      "targets": [
+        ["css=.fake_select", "css:finder"],
+        ["xpath=//div[@id='contacts-filter']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/form/div/div/div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bd95cc7-a9dd-4cd1-9af5-fa27cbfc23b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=groups[]",
+      "targets": [
+        ["name=groups[]", "name"],
+        ["css=.col-xs-6:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='groups[]']", "xpath:attributes"],
+        ["xpath=//section[@id='section-0']/span/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//span/div/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccde5efb-2306-4aaf-8f07-9b1893bea326",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-xs-6:nth-child(1) span",
+      "targets": [
+        ["css=.col-xs-6:nth-child(1) span", "css:finder"],
+        ["xpath=//section[@id='section-0']/span/div/div/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcaf2ec3-2503-44fc-99ca-d9ffd1cda81d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Wybierz",
+      "targets": [
+        ["linkText=Wybierz", "linkText"],
+        ["css=.button-popup-choose", "css:finder"],
+        ["xpath=//a[contains(text(),'Wybierz')]", "xpath:link"],
+        ["xpath=//div[@id='contacts-filter']/div/div/div/div/div[2]/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[121]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Wybierz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46593c5d-01c9-432f-9080-22bbf520ab53",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[5]/div/div/div/textarea",
+      "targets": [
+        ["id=textarea_164596", "id"],
+        ["css=#textarea_164596", "css:finder"],
+        ["xpath=//textarea[@id='textarea_164596']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f15bf63-9428-4c55-998d-669af39ce6e1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[5]/div/div/div/textarea",
+      "targets": [
+        ["id=textarea_164596", "id"],
+        ["css=#textarea_164596", "css:finder"],
+        ["xpath=//textarea[@id='textarea_164596']", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "Brak"
+    }, {
+      "id": "e0ad6902-80f9-4943-ae5a-6be1e94c23cc",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "303f6c5a-4bba-4d62-9a6b-08b0131bbf6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gateways-form:nth-child(4) .control-submit:nth-child(7) > .button-primary",
+      "targets": [
+        ["css=.gateways-form:nth-child(4) .control-submit:nth-child(7) > .button-primary", "css:finder"],
+        ["xpath=(//input[@name='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='sms_gate_numbers_from_phonebook']/div/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abd1e6b2-4133-450a-bce4-ec191422fafc",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ec4b113-4e3a-49cc-b6d1-8bf8b6affc90",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "33f978d5-8b15-44ee-8461-30033b49d9b2",
+    "name": "CYKLICZNY SMS SZYBKA BRAMKA ZAPISYWANIE CYKLU WYSYŁAŃ",
+    "commands": [{
+      "id": "0fbb9188-7b51-4d74-bc09-a60c8e7d185c",
+      "comment": "",
+      "command": "open",
+      "target": "https://ssl.smsapi.pl/periodic/sms#tab_quick_gate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e09af18f-fdcd-432a-aa36-ea67a9765199",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb63da46-3a7b-480c-b545-d40c943cd71b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='quick_gate']/div/form/div/div/div/div/div/span/select",
+      "targets": [
+        ["id=from_315950", "id"],
+        ["name=from", "name"],
+        ["css=#from_315950", "css:finder"],
+        ["xpath=//select[@id='from_315950']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "219fce12-5d49-4f0e-804c-9473342196ae",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//div[@id='quick_gate']/div/form/div/div/div/div/div/span/select",
+      "targets": [],
+      "value": "label=Test"
+    }, {
+      "id": "820249c3-bee9-464d-a0fa-1ebb06879bc8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//option[2]",
+      "targets": [
+        ["css=#from_315950 option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='Test']", "xpath:attributes"],
+        ["xpath=//select[@id='from_315950']/optgroup[2]/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cc5f8cc-89d2-4d1b-ad04-e06f0bde92bf",
+      "comment": "",
+      "command": "click",
+      "target": "name=to",
+      "targets": [
+        ["id=to_350941", "id"],
+        ["name=to", "name"],
+        ["css=#to_350941", "css:finder"],
+        ["xpath=//textarea[@id='to_350941']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b525faa8-d411-448d-84cb-f436afbb0010",
+      "comment": "",
+      "command": "type",
+      "target": "name=to",
+      "targets": [
+        ["id=to_350941", "id"],
+        ["name=to", "name"],
+        ["css=#to_350941", "css:finder"],
+        ["xpath=//textarea[@id='to_350941']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "505505000"
+    }, {
+      "id": "c2f87f0f-ed77-4038-a5e9-ea5ef6a8a4a7",
+      "comment": "",
+      "command": "click",
+      "target": "name=message",
+      "targets": [
+        ["id=textarea_947168", "id"],
+        ["name=message", "name"],
+        ["css=#textarea_947168", "css:finder"],
+        ["xpath=//textarea[@id='textarea_947168']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div[3]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5f95704-c21a-4028-abcd-44417f6ce145",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["id=textarea_947168", "id"],
+        ["name=message", "name"],
+        ["css=#textarea_947168", "css:finder"],
+        ["xpath=//textarea[@id='textarea_947168']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div[3]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "d71c9b48-007d-410d-99d4-2474f8f30c64",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='quick_gate']/div/form/div/div/div[5]/div/div/span/button",
+      "targets": [
+        ["css=div:nth-child(1) > .form-horizontal .form-inline > .ui-datepicker-trigger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div[5]/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24fbb3cc-24fe-4a5e-9cfd-d2deb2ff521c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=30",
+      "targets": [
+        ["linkText=30", "linkText"],
+        ["css=.ui-state-hover", "css:finder"],
+        ["xpath=//a[contains(text(),'30')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[6]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[36]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbc1936a-f354-4cee-a2fb-93fc24d97a57",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a5208b3-a02d-4db7-bac8-14ff07534b04",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='quick_gate']/div/form/div/div/div[8]/div/input",
+      "targets": [
+        ["css=div:nth-child(1) > .form-horizontal .button-primary", "css:finder"],
+        ["xpath=//input[@value='Dodaj']", "xpath:attributes"],
+        ["xpath=//div[@id='quick_gate']/div/form/div/div/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9a67aae-25d9-4fce-80d2-c530e6b8c9af",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe638e72-a028-45d1-91e6-340b8ad880cb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6205d83e-908b-4490-9fe1-bffeacc556a7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ssl.smsapi.pl/sms/gate", "https://ssl.smsapi.pl/sms/gate#tab_csv_no", "https://ssl.smsapi.pl/sms/gate#tab_csv_content", "https://ssl.smsapi.pl/sms/gate#tab_phone_book", "https://ssl.smsapi.pl/periodic/sms", "https://ssl.smsapi.pl/periodic/sms#tab_quick_gate"],
+  "plugins": []
+}
